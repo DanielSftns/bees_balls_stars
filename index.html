@@ -17,6 +17,11 @@
 		body{
 			height: 100vh;
 			overflow: hidden;
+			background: rgb(0,0,0);
+			background: -moz-linear-gradient(140deg, rgba(0,0,0,1) 0%, rgba(26,0,51,1) 10%, rgba(0,0,51,1) 20%, rgba(16,20,91,1) 30%, rgba(47,48,106,1) 40%, rgba(21,56,127,1) 50%, rgba(76,91,154,1) 60%, rgba(108,138,198,1) 70%, rgba(115,166,212,1) 80%, rgba(127,203,235,1) 90%, rgba(152,217,235,1) 100%);
+			background: -webkit-linear-gradient(140deg, rgba(0,0,0,1) 0%, rgba(26,0,51,1) 10%, rgba(0,0,51,1) 20%, rgba(16,20,91,1) 30%, rgba(47,48,106,1) 40%, rgba(21,56,127,1) 50%, rgba(76,91,154,1) 60%, rgba(108,138,198,1) 70%, rgba(115,166,212,1) 80%, rgba(127,203,235,1) 90%, rgba(152,217,235,1) 100%);
+			background: linear-gradient(140deg, rgba(0,0,0,1) 0%, rgba(26,0,51,1) 10%, rgba(0,0,51,1) 20%, rgba(16,20,91,1) 30%, rgba(47,48,106,1) 40%, rgba(21,56,127,1) 50%, rgba(76,91,154,1) 60%, rgba(108,138,198,1) 70%, rgba(115,166,212,1) 80%, rgba(127,203,235,1) 90%, rgba(152,217,235,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#98d9eb",GradientType=1);
 		}
 		svg{
 			width: 100%;
@@ -49,7 +54,7 @@
 				<stop offset="100%" style="stop-color:rgb(239, 229, 169);stop-opacity:1" />
 			</linearGradient>
 		</defs>
-		<rect x="-50" y="-50" width="200" height="200" fill="#72a537"></rect>
+		<rect x="-50" y="21" width="200" height="200" fill="#72a537"></rect>
 		<rect x="-50" y="90" width="200" height="20" fill="#074207"></rect>
 
 		<g class="stars">
@@ -68,15 +73,15 @@
 					attributeName="transform"
 					type="translate"
 					from="0,0"
-					to="0,-40"
+					to="300,-40"
 					begin="star1.begin"
 					keyTimes="0; 0.3; 1"
-					values="0,0; 0,25; 0, -40"
+					values="0,0; 0,25; 300, -40"
 					calcMode="linear"
 					dur="1.5s"
 					fill="freeze"
 				/>
-				<rect x="-300" y="-100" width="1000" height="210" fill="#3c2651">
+				<rect x="-500" y="-100" width="1000" height="210" fill="#3c2651">
 					<animate
 						attributeName="fill"
 						from="#3c2651"
@@ -85,6 +90,15 @@
 						values="#3c2651; #262651; #333773; #4d4e80; #375592; #6673a9; #819bce; #87b3da; #92d2ed; #a7deed; #c1e8f2"
 						dur="2s"
 						begin="3s"
+						fill="freeze"
+						id="cielo"
+					/>
+					<animate
+						attributeName="fill"
+						from="#c1e8f2"
+						to="#ffffff00"
+						dur="2s"
+						begin="cielo.end"
 						fill="freeze"
 					/>
 				</rect>
@@ -401,6 +415,7 @@
 		           begin="star7.end+1s"
 		           fill="freeze"
 		           id="baskeball1"
+				   repeatCount="indefinite"
 				/>
 				<g style="transform-origin: 5px 70px;">
 					<animateTransform
@@ -441,9 +456,10 @@
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
 		           dur="20s"
-		           begin="star7.end+2s"
+		           begin="star7.end+4s"
 		           fill="freeze"
 		           id="baskeball2"
+		           repeatCount="indefinite"
 				/>
 				<g style="transform-origin: 5px 70px;">
 					<animateTransform
@@ -484,9 +500,10 @@
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
 		           dur="20s"
-		           begin="star7.end+3.5s"
+		           begin="star7.end+5.5s"
 		           fill="freeze"
 		           id="baskeball3"
+		           repeatCount="indefinite"
 				/>
 				<g style="transform-origin: 5px 70px;">
 					<animateTransform
@@ -527,9 +544,10 @@
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
 		           dur="20s"
-		           begin="star7.end+4s"
+		           begin="star7.end+7s"
 		           fill="freeze"
 		           id="baskeball4"
+		           repeatCount="indefinite"
 				/>
 				<g style="transform-origin: 5px 70px;">
 					<animateTransform
@@ -570,9 +588,10 @@
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
 		           dur="20s"
-		           begin="star7.end+5.75s"
+		           begin="star7.end+9.75s"
 		           fill="freeze"
 		           id="baskeball5"
+		           repeatCount="indefinite"
 				/>
 				<g style="transform-origin: 5px 70px;">
 					<animateTransform
@@ -613,9 +632,10 @@
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
 		           dur="20s"
-		           begin="star7.end+6.25s"
+		           begin="star7.end+11.25s"
 		           fill="freeze"
 		           id="baskeball6"
+		           repeatCount="indefinite"
 				/>
 				<g style="transform-origin: 5px 70px;">
 					<animateTransform
@@ -661,7 +681,7 @@
 		           begin="baskeball1.begin+0.5s"
 		           fill="freeze"
 		           id="baseball1"
-		           repeatCount="6"
+		           repeatCount="indefinite"
 				/>
 				<g>
 					<animateTransform
@@ -673,7 +693,7 @@
 						calcMode="spline"
 						keySplines="0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0;"
 						begin="baseball1.begin"
-		           		repeatCount="6"
+		           		repeatCount="indefinite"
 						dur="3.5s"
 					/>
 					<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
@@ -689,183 +709,183 @@
 		window.addEventListener('load', ()=>{
 			setTimeout(()=>{
 				tsParticles.load("tsparticles", {
-		        	detectRetina: true,
-		        	fpsLimit: 60,
-			        interactivity: {
-			        detectsOn: "canvas",
-			        events: {
-			          onClick: {
-			            enable: false,
-			            mode: "push"
-			          },
-			          onDiv: {
-			            elementId: "repulse-div",
-			            enable: false,
-			            mode: "repulse"
-			          },
-			          onHover: {
-			            enable: true,
-			            mode: "repulse",
-			            parallax: {
-			              enable: false,
-			              force: 100,
-			              smooth: 10
-			            }
-			          },
-			          resize: true
-			        },
-			        modes: {
-			          bubble: {
-			            distance: 400,
-			            duration: 2,
-			            opacity: 1,
-			            size: 40,
-			            speed: 3
-			          },
-			          connect: {
-			            distance: 80,
-			            lineLinked: {
-			              opacity: 0.5
-			            },
-			            radius: 60
-			          },
-			          grab: {
-			            distance: 1,
-			            lineLinked: {
-			              opacity: 1
-			            }
-			          },
-			          push: {
-			            quantity: 1
-			          },
-			          remove: {
-			            quantity: 2
-			          },
-			          repulse: {
-			            distance: 100,
-			            duration: 0.4
-			          }
-			        }
-			      },
-			      particles: {
-			        color: {
-			          value: "#ffffff"
-			        },
-			        lineLinked: {
-			          blink: false,
-			          color: "#000",
-			          consent: false,
-			          distance: 150,
-			          enable: false,
-			          opacity: 0,
-			          width: 0
-			        },
-			        rotate: {
-			          value: 0,
-			          random: false,
-			          direction: "clockwise",
-			          animation: {
-			            enable: false,
-			            speed: 5,
-			            sync: false
-			          }
-			        },
-			        move: {
-			          attract: {
-			            enable: true,
-			            rotateX: 1000,
-			            rotateY: 10000
-			          },
-			          bounce: false,
-			          direction: "none",
-			          enable: true,
-			          outMode: "out",
-			          random: true,
-			          speed: 7,
-			          straight: false,
-			        },
-			        number: {
-			          density: {
-			            enable: true,
-			            area: 800
-			          },
-			          limit: 0,
-			          value: 30
-			        },
-			        opacity: {
-			          animation: {
-			            enable: false,
-			            minimumValue: 0.1,
-			            speed: 1,
-			            sync: false
-			          },
-			          random: true,
-			          value: 0.1
-			        },
-			        shape: {
-			          character: {
-			            fill: false,
-			            font: "Verdana",
-			            style: "",
-			            value: "*",
-			            weight: "400"
-			          },
-			          image: [
-			            {
-			              src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6911e30593cbc7118d116f_2bee2.png",
-			              width: 32,
-			              height: 32
-			            },
-			            {
-			              src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6911df200aba4832fdbed5_1bee-copy.png",
-			              width: 32,
-			              height: 32
-			            },
-			            {
-			              src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6911ca7fb6616acb212a4a_4bee.png",
-			              width: 32,
-			              height: 32
-			            },
-			            {
-			              src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6911c089d08f747f9e12a9_3bee.png",
-			              width: 32,
-			              height: 32
-			            },
-			          ],
-			          polygon: {
-			            nb_sides: 5
-			          },
-			          stroke: {
-			            color: "#000000",
-			            width: 0
-			          },
-			          type: "image"
-			        },
-			        size: {
-			          animation: {
-			            enable: false,
-			            minimumValue: 0.1,
-			            speed: 40,
-			            sync: false
-			          },
-			          random: true,
-			          value: 20
-			        }
-			      },
-			      polygon: {
-			        draw: {
-			          enable: false,
-			          lineColor: "#ffffff",
-			          lineWidth: 0.5
-			        },
-			        move: {
-			          radius: 10
-			        },
-			        scale: 1,
-			        type: "none",
-			        url: ""
-			      }
-		    	});
+				  detectRetina: true,
+				  fpsLimit: 60,
+				  interactivity: {
+				    detectsOn: "canvas",
+				    events: {
+				      onClick: {
+				        enable: false,
+				        mode: "push"
+				      },
+				      onDiv: {
+				        elementId: "repulse-div",
+				        enable: false,
+				        mode: "repulse"
+				      },
+				      onHover: {
+				        enable: true,
+				        mode: "repulse",
+				        parallax: {
+				          enable: false,
+				          force: 100,
+				          smooth: 10
+				        }
+				      },
+				      resize: true
+				    },
+				    modes: {
+				      bubble: {
+				        distance: 400,
+				        duration: 2,
+				        opacity: 1,
+				        size: 40,
+				        speed: 3
+				      },
+				      connect: {
+				        distance: 80,
+				        lineLinked: {
+				          opacity: 0.5
+				        },
+				        radius: 60
+				      },
+				      grab: {
+				        distance: 1,
+				        lineLinked: {
+				          opacity: 1
+				        }
+				      },
+				      push: {
+				        quantity: 1
+				      },
+				      remove: {
+				        quantity: 2
+				      },
+				      repulse: {
+				        distance: 100,
+				        duration: 0.4
+				      }
+				    }
+				  },
+				  particles: {
+				    color: {
+				      value: "#ffffff"
+				    },
+				    lineLinked: {
+				      blink: false,
+				      color: "#000",
+				      consent: false,
+				      distance: 150,
+				      enable: false,
+				      opacity: 0,
+				      width: 0
+				    },
+				    rotate: {
+				      value: 0,
+				      random: false,
+				      direction: "clockwise",
+				      animation: {
+				        enable: false,
+				        speed: 5,
+				        sync: false
+				      }
+				    },
+				    move: {
+				      attract: {
+				        enable: true,
+				        rotateX: 1000,
+				        rotateY: 10000
+				      },
+				      bounce: false,
+				      direction: "none",
+				      enable: true,
+				      outMode: "out",
+				      random: true,
+				      speed: 7,
+				      straight: false,
+				    },
+				    number: {
+				      density: {
+				        enable: true,
+				        area: 800
+				      },
+				      limit: 0,
+				      value: 80
+				    },
+				    opacity: {
+				      animation: {
+				        enable: false,
+				        minimumValue: 0.1,
+				        speed: 1,
+				        sync: false
+				      },
+				      random: true,
+				      value: 0.1
+				    },
+				    shape: {
+				      character: {
+				        fill: false,
+				        font: "Verdana",
+				        style: "",
+				        value: "*",
+				        weight: "400"
+				      },
+				      image: [
+				        {
+				          src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6911e30593cbc7118d116f_2bee2.png",
+				          width: 32,
+				          height: 32
+				        },
+				        {
+				          src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6911df200aba4832fdbed5_1bee-copy.png",
+				          width: 32,
+				          height: 32
+				        },
+				        {
+				          src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6911ca7fb6616acb212a4a_4bee.png",
+				          width: 32,
+				          height: 32
+				        },
+				        {
+				          src: "https://uploads-ssl.webflow.com/5f69105193b2fe726bf7d8b3/5f6b6e01f70ec93bb45325cf_5bee.png",
+				          width: 32,
+				          height: 32
+				        },
+				      ],
+				      polygon: {
+				        nb_sides: 5
+				      },
+				      stroke: {
+				        color: "#000000",
+				        width: 0
+				      },
+				      type: "image"
+				    },
+				    size: {
+				      animation: {
+				        enable: false,
+				        minimumValue: 0.1,
+				        speed: 40,
+				        sync: false
+				      },
+				      random: true,
+				      value: 20
+				    }
+				  },
+				  polygon: {
+				    draw: {
+				      enable: false,
+				      lineColor: "#ffffff",
+				      lineWidth: 0.5
+				    },
+				    move: {
+				      radius: 10
+				    },
+				    scale: 1,
+				    type: "none",
+				    url: ""
+				  }
+				});
 			},3000)
 		});
 	</script>
