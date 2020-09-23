@@ -76,7 +76,18 @@
 					dur="1.5s"
 					fill="freeze"
 				/>
-				<rect x="-300" y="-100" width="1000" height="210" fill="#06062f"></rect>
+				<rect x="-300" y="-100" width="1000" height="210" fill="#3c2651">
+					<animate
+						attributeName="fill"
+						from="#3c2651"
+						to="#c1e8f2"
+						keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1"
+						values="#3c2651; #262651; #333773; #4d4e80; #375592; #6673a9; #819bce; #87b3da; #92d2ed; #a7deed; #c1e8f2"
+						dur="2s"
+						begin="3s"
+						fill="freeze"
+					/>
+				</rect>
 				<g class="s2">
 					<g>
 						<line x1="-27.5" y1="9" x2="-35" y2="48.5" style="stroke-dasharray: 41; stroke-dashoffset: 41; stroke: url(#grad1); stroke-width: .2px;">
@@ -382,11 +393,11 @@
 				<animate
 		           attributeName="x"
 		           from="-70"
-		           to="30" 
+		           to="160" 
 		           calcMode="spline"
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
+		           dur="20s"
 		           begin="star7.end+1s"
 		           fill="freeze"
 		           id="baskeball1"
@@ -400,7 +411,7 @@
 						values="1 0.7; 0.7 1; 1 1; 1 0.7"
 						keyTimes="0; 0.25; 0.98; 1"
 						begin="baskeball1.begin"
-						end="baskeball1salto4.end"
+						end="baskeball1.end"
 						dur="2s"
 						repeatCount="indefinite"
 					/>
@@ -409,77 +420,12 @@
 							attributeType="XML"
 							attributeName="transform"
 							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
+							values="0,0; 0,-27; 0,-32;  0,0"
 							keyTimes="0; 0.25; 0.4; 1"
 							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
 							begin="baskeball1.begin"
+							end="baskeball1.end"
 							dur="2s"
-							id="baskeball1salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball1salto1.end"
-							dur="2s"
-							id="baskeball1salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball1salto2.end"
-							dur="2s"
-							id="baskeball1salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball1salto3.end"
-							dur="2s"
-							id="baskeball1salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball1salto4.end"
-							dur="1.5s"
-							id="baskeball1salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball1salto5.end"
-							dur="1s"
-							id="baskeball1salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baskeball1salto6.end"
-							end="baskeball1salto6.end+2s"
-							dur="0.5s"
 							repeatCount="indefinite"
 						/>
 						<image x="0" y="57.5" width="12" height="12" xlink:href="./balls/basketball.png"/>
@@ -490,11 +436,11 @@
 				<animate
 		           attributeName="x"
 		           from="-70"
-		           to="35" 
+		           to="160" 
 		           calcMode="spline"
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
+		           dur="20s"
 		           begin="star7.end+2s"
 		           fill="freeze"
 		           id="baskeball2"
@@ -508,7 +454,7 @@
 						values="1 0.7; 0.7 1; 1 1; 1 0.7"
 						keyTimes="0; 0.25; 0.98; 1"
 						begin="baskeball2.begin"
-						end="baskeball2salto4.end"
+						end="baskeball2.end"
 						dur="2s"
 						repeatCount="indefinite"
 					/>
@@ -517,77 +463,12 @@
 							attributeType="XML"
 							attributeName="transform"
 							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
+							values="0,0; 0,-27; 0,-32;  0,0"
 							keyTimes="0; 0.25; 0.4; 1"
 							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
 							begin="baskeball2.begin"
+							end="baskeball2.end"
 							dur="2s"
-							id="baskeball2salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball2salto1.end"
-							dur="2s"
-							id="baskeball2salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball2salto2.end"
-							dur="2s"
-							id="baskeball2salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball2salto3.end"
-							dur="2s"
-							id="baskeball2salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball2salto4.end"
-							dur="1.5s"
-							id="baskeball2salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball2salto5.end"
-							dur="1s"
-							id="baskeball2salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baskeball2salto6.end"
-							end="baskeball2salto6.end+2s"
-							dur="0.5s"
 							repeatCount="indefinite"
 						/>
 						<image x="0" y="57.5" width="12" height="12" xlink:href="./balls/basketball.png"/>
@@ -598,12 +479,12 @@
 				<animate
 		           attributeName="x"
 		           from="-70"
-		           to="25" 
+		           to="160" 
 		           calcMode="spline"
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+2.5s"
+		           dur="20s"
+		           begin="star7.end+3.5s"
 		           fill="freeze"
 		           id="baskeball3"
 				/>
@@ -616,7 +497,7 @@
 						values="1 0.7; 0.7 1; 1 1; 1 0.7"
 						keyTimes="0; 0.25; 0.98; 1"
 						begin="baskeball3.begin"
-						end="baskeball3salto4.end"
+						end="baskeball3.end"
 						dur="2s"
 						repeatCount="indefinite"
 					/>
@@ -625,77 +506,12 @@
 							attributeType="XML"
 							attributeName="transform"
 							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
+							values="0,0; 0,-27; 0,-32;  0,0"
 							keyTimes="0; 0.25; 0.4; 1"
 							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
 							begin="baskeball3.begin"
+							end="baskeball3.end"
 							dur="2s"
-							id="baskeball3salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball3salto1.end"
-							dur="2s"
-							id="baskeball3salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball3salto2.end"
-							dur="2s"
-							id="baskeball3salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball3salto3.end"
-							dur="2s"
-							id="baskeball3salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball3salto4.end"
-							dur="1.5s"
-							id="baskeball3salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball3salto5.end"
-							dur="1s"
-							id="baskeball3salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baskeball3salto6.end"
-							end="baskeball3salto6.end+2s"
-							dur="0.5s"
 							repeatCount="indefinite"
 						/>
 						<image x="0" y="57.5" width="12" height="12" xlink:href="./balls/basketball.png"/>
@@ -706,12 +522,12 @@
 				<animate
 		           attributeName="x"
 		           from="-70"
-		           to="40" 
+		           to="160" 
 		           calcMode="spline"
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+1.5s"
+		           dur="20s"
+		           begin="star7.end+4s"
 		           fill="freeze"
 		           id="baskeball4"
 				/>
@@ -724,7 +540,7 @@
 						values="1 0.7; 0.7 1; 1 1; 1 0.7"
 						keyTimes="0; 0.25; 0.98; 1"
 						begin="baskeball4.begin"
-						end="baskeball4salto4.end"
+						end="baskeball4.end"
 						dur="2s"
 						repeatCount="indefinite"
 					/>
@@ -733,77 +549,12 @@
 							attributeType="XML"
 							attributeName="transform"
 							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
+							values="0,0; 0,-27; 0,-32;  0,0"
 							keyTimes="0; 0.25; 0.4; 1"
 							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
 							begin="baskeball4.begin"
+							end="baskeball4.end"
 							dur="2s"
-							id="baskeball4salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball4salto1.end"
-							dur="2s"
-							id="baskeball4salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball4salto2.end"
-							dur="2s"
-							id="baskeball4salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball4salto3.end"
-							dur="2s"
-							id="baskeball4salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball4salto4.end"
-							dur="1.5s"
-							id="baskeball4salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball4salto5.end"
-							dur="1s"
-							id="baskeball4salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baskeball4salto6.end"
-							end="baskeball4salto6.end+2s"
-							dur="0.5s"
 							repeatCount="indefinite"
 						/>
 						<image x="0" y="57.5" width="12" height="12" xlink:href="./balls/basketball.png"/>
@@ -814,12 +565,12 @@
 				<animate
 		           attributeName="x"
 		           from="-70"
-		           to="20" 
+		           to="160" 
 		           calcMode="spline"
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+3s"
+		           dur="20s"
+		           begin="star7.end+5.75s"
 		           fill="freeze"
 		           id="baskeball5"
 				/>
@@ -832,7 +583,7 @@
 						values="1 0.7; 0.7 1; 1 1; 1 0.7"
 						keyTimes="0; 0.25; 0.98; 1"
 						begin="baskeball5.begin"
-						end="baskeball5salto4.end"
+						end="baskeball5.end"
 						dur="2s"
 						repeatCount="indefinite"
 					/>
@@ -841,77 +592,12 @@
 							attributeType="XML"
 							attributeName="transform"
 							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
+							values="0,0; 0,-27; 0,-32;  0,0"
 							keyTimes="0; 0.25; 0.4; 1"
 							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
 							begin="baskeball5.begin"
+							end="baskeball5.end"
 							dur="2s"
-							id="baskeball5salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball5salto1.end"
-							dur="2s"
-							id="baskeball5salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball5salto2.end"
-							dur="2s"
-							id="baskeball5salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball5salto3.end"
-							dur="2s"
-							id="baskeball5salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball5salto4.end"
-							dur="1.5s"
-							id="baskeball5salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball5salto5.end"
-							dur="1s"
-							id="baskeball5salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baskeball5salto6.end"
-							end="baskeball5salto6.end+2s"
-							dur="0.5s"
 							repeatCount="indefinite"
 						/>
 						<image x="0" y="57.5" width="12" height="12" xlink:href="./balls/basketball.png"/>
@@ -922,12 +608,12 @@
 				<animate
 		           attributeName="x"
 		           from="-70"
-		           to="37" 
+		           to="160" 
 		           calcMode="spline"
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+3.5s"
+		           dur="20s"
+		           begin="star7.end+6.25s"
 		           fill="freeze"
 		           id="baskeball6"
 				/>
@@ -940,7 +626,7 @@
 						values="1 0.7; 0.7 1; 1 1; 1 0.7"
 						keyTimes="0; 0.25; 0.98; 1"
 						begin="baskeball6.begin"
-						end="baskeball6salto4.end"
+						end="baskeball6.end"
 						dur="2s"
 						repeatCount="indefinite"
 					/>
@@ -949,77 +635,12 @@
 							attributeType="XML"
 							attributeName="transform"
 							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
+							values="0,0; 0,-27; 0,-32;  0,0"
 							keyTimes="0; 0.25; 0.4; 1"
 							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
 							begin="baskeball6.begin"
+							end="baskeball6.end"
 							dur="2s"
-							id="baskeball6salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball6salto1.end"
-							dur="2s"
-							id="baskeball6salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball6salto2.end"
-							dur="2s"
-							id="baskeball6salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball6salto3.end"
-							dur="2s"
-							id="baskeball6salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball6salto4.end"
-							dur="1.5s"
-							id="baskeball6salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baskeball6salto5.end"
-							dur="1s"
-							id="baskeball6salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baskeball6salto6.end"
-							end="baskeball6salto6.end+2s"
-							dur="0.5s"
 							repeatCount="indefinite"
 						/>
 						<image x="0" y="57.5" width="12" height="12" xlink:href="./balls/basketball.png"/>
@@ -1032,648 +653,30 @@
 				<animate
 		           attributeName="x"
 		           from="160"
-		           to="40" 
+		           to="-70" 
 		           calcMode="spline"
 		           keyTimes="0;1"
 		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+1.5s"
+		           dur="3.5s"
+		           begin="baskeball1.begin+0.5s"
 		           fill="freeze"
 		           id="baseball1"
+		           repeatCount="6"
 				/>
-				<g style="transform-origin: 5px 70px;">
+				<g>
 					<animateTransform
+						attributeType="XML"
 						attributeName="transform"
-						type="scale"
-						from="1 1"
-						to="1 1"
-						values="1 0.7; 0.7 1; 1 1; 1 0.7"
-						keyTimes="0; 0.25; 0.98; 1"
+						type="translate"
+						values="0,-30; 0,-55; 0,-55; 0,-20"
+						keyTimes="0; 0.4; 0.45; 1"
+						calcMode="spline"
+						keySplines="0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0;"
 						begin="baseball1.begin"
-						end="baseball1salto4.end"
-						dur="2s"
-						repeatCount="indefinite"
+		           		repeatCount="6"
+						dur="3.5s"
 					/>
-					<g>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball1.begin"
-							dur="2s"
-							id="baseball1salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball1salto1.end"
-							dur="2s"
-							id="baseball1salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball1salto2.end"
-							dur="2s"
-							id="baseball1salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball1salto3.end"
-							dur="2s"
-							id="baseball1salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball1salto4.end"
-							dur="1.5s"
-							id="baseball1salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball1salto5.end"
-							dur="1s"
-							id="baseball1salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baseball1salto6.end"
-							end="baseball1salto6.end+2s"
-							dur="0.5s"
-							repeatCount="indefinite"
-						/>
-						<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
-					</g>
-				</g>
-			</svg>
-			<svg x="160" y="24" viewBox="0 0 10 70" width="10" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1">
-				<animate
-		           attributeName="x"
-		           from="160"
-		           to="45" 
-		           calcMode="spline"
-		           keyTimes="0;1"
-		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+1s"
-		           fill="freeze"
-		           id="baseball2"
-				/>
-				<g style="transform-origin: 5px 70px;">
-					<animateTransform
-						attributeName="transform"
-						type="scale"
-						from="1 1"
-						to="1 1"
-						values="1 0.7; 0.7 1; 1 1; 1 0.7"
-						keyTimes="0; 0.25; 0.98; 1"
-						begin="baseball2.begin"
-						end="baseball2salto4.end"
-						dur="2s"
-						repeatCount="indefinite"
-					/>
-					<g>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball2.begin"
-							dur="2s"
-							id="baseball2salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball2salto1.end"
-							dur="2s"
-							id="baseball2salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball2salto2.end"
-							dur="2s"
-							id="baseball2salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball2salto3.end"
-							dur="2s"
-							id="baseball2salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball2salto4.end"
-							dur="1.5s"
-							id="baseball2salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball2salto5.end"
-							dur="1s"
-							id="baseball2salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baseball2salto6.end"
-							end="baseball2salto6.end+2s"
-							dur="0.5s"
-							repeatCount="indefinite"
-						/>
-						<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
-					</g>
-				</g>
-			</svg>
-			<svg x="160" y="24" viewBox="0 0 10 70" width="10" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1">
-				<animate
-		           attributeName="x"
-		           from="160"
-		           to="50" 
-		           calcMode="spline"
-		           keyTimes="0;1"
-		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+2.5s"
-		           fill="freeze"
-		           id="baseball3"
-				/>
-				<g style="transform-origin: 5px 70px;">
-					<animateTransform
-						attributeName="transform"
-						type="scale"
-						from="1 1"
-						to="1 1"
-						values="1 0.7; 0.7 1; 1 1; 1 0.7"
-						keyTimes="0; 0.25; 0.98; 1"
-						begin="baseball3.begin"
-						end="baseball3salto4.end"
-						dur="2s"
-						repeatCount="indefinite"
-					/>
-					<g>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball3.begin"
-							dur="2s"
-							id="baseball3salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball3salto1.end"
-							dur="2s"
-							id="baseball3salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball3salto2.end"
-							dur="2s"
-							id="baseball3salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball3salto3.end"
-							dur="2s"
-							id="baseball3salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball3salto4.end"
-							dur="1.5s"
-							id="baseball3salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball3salto5.end"
-							dur="1s"
-							id="baseball3salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baseball3salto6.end"
-							end="baseball3salto6.end+2s"
-							dur="0.5s"
-							repeatCount="indefinite"
-						/>
-						<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
-					</g>
-				</g>
-			</svg>
-			<svg x="160" y="24" viewBox="0 0 10 70" width="10" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1">
-				<animate
-		           attributeName="x"
-		           from="160"
-		           to="43" 
-		           calcMode="spline"
-		           keyTimes="0;1"
-		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+2s"
-		           fill="freeze"
-		           id="baseball4"
-				/>
-				<g style="transform-origin: 5px 70px;">
-					<animateTransform
-						attributeName="transform"
-						type="scale"
-						from="1 1"
-						to="1 1"
-						values="1 0.7; 0.7 1; 1 1; 1 0.7"
-						keyTimes="0; 0.25; 0.98; 1"
-						begin="baseball4.begin"
-						end="baseball4salto4.end"
-						dur="2s"
-						repeatCount="indefinite"
-					/>
-					<g>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball4.begin"
-							dur="2s"
-							id="baseball4salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball4salto1.end"
-							dur="2s"
-							id="baseball4salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball4salto2.end"
-							dur="2s"
-							id="baseball4salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball4salto3.end"
-							dur="2s"
-							id="baseball4salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball4salto4.end"
-							dur="1.5s"
-							id="baseball4salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball4salto5.end"
-							dur="1s"
-							id="baseball4salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baseball4salto6.end"
-							end="baseball4salto6.end+2s"
-							dur="0.5s"
-							repeatCount="indefinite"
-						/>
-						<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
-					</g>
-				</g>
-			</svg>
-			<svg x="160" y="24" viewBox="0 0 10 70" width="10" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1">
-				<animate
-		           attributeName="x"
-		           from="160"
-		           to="55" 
-		           calcMode="spline"
-		           keyTimes="0;1"
-		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+3s"
-		           fill="freeze"
-		           id="baseball5"
-				/>
-				<g style="transform-origin: 5px 70px;">
-					<animateTransform
-						attributeName="transform"
-						type="scale"
-						from="1 1"
-						to="1 1"
-						values="1 0.7; 0.7 1; 1 1; 1 0.7"
-						keyTimes="0; 0.25; 0.98; 1"
-						begin="baseball5.begin"
-						end="baseball5salto4.end"
-						dur="2s"
-						repeatCount="indefinite"
-					/>
-					<g>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball5.begin"
-							dur="2s"
-							id="baseball5salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball5salto1.end"
-							dur="2s"
-							id="baseball5salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball5salto2.end"
-							dur="2s"
-							id="baseball5salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball5salto3.end"
-							dur="2s"
-							id="baseball5salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball5salto4.end"
-							dur="1.5s"
-							id="baseball5salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball5salto5.end"
-							dur="1s"
-							id="baseball5salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baseball5salto6.end"
-							end="baseball5salto6.end+2s"
-							dur="0.5s"
-							repeatCount="indefinite"
-						/>
-						<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
-					</g>
-				</g>
-			</svg>
-			<svg x="160" y="24" viewBox="0 0 10 70" width="10" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1">
-				<animate
-		           attributeName="x"
-		           from="160"
-		           to="53" 
-		           calcMode="spline"
-		           keyTimes="0;1"
-		           keySplines=".59 .65 .36 .72"
-		           dur="12s"
-		           begin="star7.end+3.5s"
-		           fill="freeze"
-		           id="baseball6"
-				/>
-				<g style="transform-origin: 5px 70px;">
-					<animateTransform
-						attributeName="transform"
-						type="scale"
-						from="1 1"
-						to="1 1"
-						values="1 0.7; 0.7 1; 1 1; 1 0.7"
-						keyTimes="0; 0.25; 0.98; 1"
-						begin="baseball6.begin"
-						end="baseball6salto4.end"
-						dur="2s"
-						repeatCount="indefinite"
-					/>
-					<g>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-40; 0,-50;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball6.begin"
-							dur="2s"
-							id="baseball6salto1"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-32; 0,-40;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball6salto1.end"
-							dur="2s"
-							id="baseball6salto2"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-25.6; 0,-32;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball6salto2.end"
-							dur="2s"
-							id="baseball6salto3"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-20.48; 0,-25.6;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball6salto3.end"
-							dur="2s"
-							id="baseball6salto4"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-16; 0,-20;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball6salto4.end"
-							dur="1.5s"
-							id="baseball6salto5"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-10; 0,-15;  0,0"
-							keyTimes="0; 0.25; 0.4; 1"
-							keySplines=".04 .59 .36 .97; .04 .59 .36 .97; .4 -0.02 .93 .64;"
-							begin="baseball6salto5.end"
-							dur="1s"
-							id="baseball6salto6"
-						/>
-						<animateTransform
-							attributeType="XML"
-							attributeName="transform"
-							type="translate"
-							values="0,0; 0,-1; 0,0"
-							keyTimes="0; 0.5; 1"
-							begin="baseball6salto6.end"
-							end="baseball6salto6.end+2s"
-							dur="0.5s"
-							repeatCount="indefinite"
-						/>
-						<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
-					</g>
+					<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
 				</g>
 			</svg>
 		</g>
