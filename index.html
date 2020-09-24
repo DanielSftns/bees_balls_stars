@@ -54,9 +54,9 @@
 				<stop offset="100%" style="stop-color:rgb(239, 229, 169);stop-opacity:1" />
 			</linearGradient>
 		</defs>
-		<rect x="-50" y="60" width="200" height="200" fill="#72a537"></rect>
+		<!-- <rect x="-50" y="60" width="200" height="200" fill="#72a537"></rect> -->
+		<image xmlns="http://www.w3.org/2000/svg" x="-100" y="-25" width="300" height="115" xlink:href="./grass_splashpage.png"></image>
 		<rect x="-50" y="90" width="200" height="20" fill="#074207"></rect>
-
 		<g class="stars">
 			<animateTransform
 				attributeName="transform"
@@ -70,7 +70,7 @@
 				dur="0.5s"
 				fill="freeze"
 			/>
-			<rect x="-500" y="-100" width="1000" height="220" fill="#3c2651">
+			<rect x="-500" y="-100" width="1000" height="350" fill="#3c2651">
 				<animate
 					attributeName="fill"
 					from="#3c2651"
@@ -798,7 +798,7 @@
 						attributeType="XML"
 						attributeName="transform"
 						type="translate"
-						values="0,-30; 0,-55; 0,-55; 0,-20"
+						values="0,-30; 0,-55; 0,-55; 0,-30"
 						keyTimes="0; 0.4; 0.45; 1"
 						calcMode="spline"
 						keySplines="0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0;"
@@ -806,7 +806,54 @@
 		           		repeatCount="indefinite"
 						dur="3.5s"
 					/>
-					<image x="0" y="57.5" width="10" height="10" xlink:href="./balls/baseball.png"/>
+					<image x="0" y="57.5" width="7" height="7" xlink:href="./balls/baseball.png"/>
+				</g>
+			</svg>
+
+			<svg x="160" y="24" viewBox="0 0 15 70" width="15" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1">
+				<animate
+		           attributeName="x"
+		           from="160"
+		           to="-70" 
+		           calcMode="spline"
+		           keyTimes="0;1"
+		           keySplines=".59 .65 .36 .72"
+		           dur="3.5s"
+		           begin="baskeball1.begin+2.5s"
+		           fill="freeze"
+		           id="football"
+		           repeatCount="indefinite"
+				/>
+				<g>
+					<animateTransform
+						attributeType="XML"
+						attributeName="transform"
+						type="translate"
+						values="0,-30; 0,-45; 0,-45; 0,-5"
+						keyTimes="0; 0.3; 0.35; 1"
+						calcMode="spline"
+						keySplines="0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0;"
+						begin="football.begin"
+		           		repeatCount="indefinite"
+						dur="3.5s"
+					/>
+					<g>
+						<animateTransform
+							attributeType="XML"
+							attributeName="transform"
+							type="rotate"
+							from="20 10 70"
+							to="-25 10 70"
+							values="20 10 70; 0 10 70; 0 10 70; -25 10 70"
+							keyTimes="0; 0.3; 0.35; 1"
+							calcMode="spline"
+							keySplines="0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0; 0.42 0.0 1.0 1.0;"
+							begin="football.begin"
+			           		repeatCount="indefinite"
+							dur="3.5s"
+						/>
+						<image x="0" y="57.5" width="15" height="15" xlink:href="./balls/football.png"/>
+					</g>	
 				</g>
 			</svg>
 		</g>
